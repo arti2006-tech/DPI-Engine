@@ -1,2 +1,4 @@
-# Project exclude paths
-/dpi-java/target/
+.idea/
+target/
+*.pcap
+!dpi-java/samples/test_dpi.pcap

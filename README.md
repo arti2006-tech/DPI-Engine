@@ -2,7 +2,7 @@
 
 A Deep Packet Inspection (DPI) project written in Java.
 
-It reads a network capture file (.pcap), finds which website or app each
+It reads a network capture file (.pcap), finds out which website or app each
 connection belongs to, blocks the ones you choose, and saves the rest to a new file.
 
 ## What it does
@@ -20,15 +20,13 @@ applies the blocking rules.
 Java 17 or newer
 
 ## How to run
-Open the `dpi-java` folder in IntelliJ IDEA, run `com.dpi.Main` and give these
-program arguments:
 ```
-samples/test_dpi.pcap output.pcap
+java -jar dpi-engine.jar samples/test_dpi.pcap output.pcap
 ```
 
 ## How to block
 ```
-samples/test_dpi.pcap output.pcap --block-app YouTube --block-ip 192.168.1.50
+java -jar dpi-engine.jar samples/test_dpi.pcap output.pcap --block-app YouTube --block-ip 192.168.1.50
 ```
 
 | Option | Meaning |
@@ -42,4 +40,9 @@ samples/test_dpi.pcap output.pcap --block-app YouTube --block-ip 192.168.1.50
 The sample file has 77 packets. Blocking YouTube and 192.168.1.50 forwards 71
 and drops 6.
 
+## Acknowledgements
+Based on the open-source project
+[perryvegehan/Packet_analyzer](https://github.com/perryvegehan/Packet_analyzer).
 
+## Author
+Arti Rawat

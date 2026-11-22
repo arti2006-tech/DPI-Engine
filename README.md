@@ -40,9 +40,6 @@ java -jar dpi-engine.jar samples/test_dpi.pcap output.pcap --block-app YouTube -
 The sample file has 77 packets. Blocking YouTube and 192.168.1.50 forwards 71
 and drops 6.
 
-## Acknowledgements
-Based on the open-source project
-[perryvegehan/Packet_analyzer](https://github.com/perryvegehan/Packet_analyzer).
 
 ## Author
 Arti Rawat
